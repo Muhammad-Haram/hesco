@@ -1,0 +1,217 @@
+@font-face {
+    font-family: satochi;
+    src: url("fonts/satochi/Satoshi-Regular.otf");
+}
+
+@font-face {
+    font-family: quantifyRegular;
+    src: url("fonts/quantify/Quantify.ttf");
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.All-btn {
+    font-family: quantifyRegular;
+    font-family: 100;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    color: white;
+    border: 1px solid white;
+    padding: 18px 30px;
+    letter-spacing: 1px;
+}
+
+.header-section {
+    width: 100%;
+}
+
+.header-section .left {
+    width: 100%;
+    padding: 0 120px;
+    position: relative;
+}
+
+.header-section .right {
+    background: linear-gradient(330deg, rgba(107, 0, 149, 1) 0%, rgba(169, 0, 87, 1) 100%);
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.header-section .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-section .nav .logo {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #6B0095;
+}
+
+.header-section .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-section .nav ul li {
+    list-style-type: none;
+    font-family: satochi;
+    cursor: pointer;
+}
+
+.header-section .nav .transparent {
+    background-color: transparent;
+}
+
+.header-section .small-star {}
+
+.header-section .hero .hero-text {
+    position: relative;
+}
+
+.header-section .hero .hero-text .top-para {
+    font-family: satochi;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.header-section .left .hero .hero-text .small-star {
+    width: 35px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    height: 35px;
+}
+
+.header-section .left .hero .hero-text .small-star-2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
+
+.header-section .hero .hero-text .hero-head,
+.header-section .hero .hero-text .hero-head-2,
+.header-section .hero .hero-text .hero-head-3 {
+    font-family: quantifyRegular;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.header-section .hero .hero-text .hero-head::after {
+    content: "";
+    background-image: url("img/star.png");
+    padding: 35px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotate;
+}
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.header-section .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section .hero .hero-text {
+    width: 50%;
+}
+
+.header-section .hero .hero-text .hero-head-2::before {
+    content: "";
+    background-image: url("img/arrow-1.png");
+    padding: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 25px 0 30px;
+}
+
+.hero-text-sm {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text-sm .circle-bar {
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    height: 55px;
+    width: 230px;
+    padding: 5px 8px;
+}
+
+.hero-text-sm .circle-bar .circle-bar-gradient {
+    background: linear-gradient(330deg, rgba(107, 0, 149, 1) 0%, rgba(169, 0, 87, 1) 100%);
+    width: 42px;
+    height: 100%;
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+
+.hero-text-sm .circle-bar .circle-bar-gradient:hover {
+    width: 100%;
+}
+
+.header-section .hero .hero-text .hero-para {
+    font-family: satochi;
+    max-width: 460px;
+    margin-top: 10px;
+}
+
+.header-section .hero .hero-text .hero-btn {
+    background: linear-gradient(330deg, #5600a9 0%, rgba(169, 0, 87, 1) 100%);
+    border: 0;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 1s e ase;
+}
+
+.header-section .hero .hero-text .hero-btn:hover {
+    background: linear-gradient(330deg, rgba(169, 0, 87, 1) 0%, #5600a9 100%);
+}
+
+.header-section .hero .hero-img {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 65px;
+}
+
+.header-section .hero .hero-img .right-house {
+    width: 100%;
+}
