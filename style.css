@@ -295,13 +295,15 @@
     padding: 80px 0;
 }
 
-.services .ser-head-div {
+.services .ser-head-div,
+.reviews .reviews-head-div {
     width: 100%;
     position: relative;
     margin-bottom: 10px;
 }
 
-.services .ser-head-div .services-stroke-head {
+.services .ser-head-div .services-stroke-head,
+.reviews .reviews-head-div .reviews-stroke-head {
     font-size: 120px;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0.082);
     color: transparent;
@@ -310,7 +312,8 @@
     font-weight: 900;
 }
 
-.services .ser-head-div .services-head {
+.services .ser-head-div .services-head,
+.reviews .reviews-head-div .reviews-head {
     font-size: 60px;
     font-family: quantifyRegular;
     position: absolute;
@@ -319,7 +322,8 @@
     transform: translate(-50%, -50%);
 }
 
-.services .services-para {
+.services .services-para,
+.reviews .reviews-para {
     font-family: satochi;
     text-align: center;
     margin-bottom: 30px;
@@ -388,4 +392,15 @@
     font-family: satochi;
     font-weight: 100;
     max-width: 160px;
+}
+
+/* reviews / slider section */
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6e0ff49;
 }
