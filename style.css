@@ -535,10 +535,6 @@
     display: none;
 }
 
-.form .active{
-    display: flex;
-}
-
 .form .msg-box .msg {
     color: #000;
     font-size: 20px;

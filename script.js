@@ -30,4 +30,14 @@ var swiper = new Swiper(".mySwiper", {
 
 // form submit msg 
 
-let 
+let form = document.querySelector('.form-section');
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let msgBox = document.querySelector(".msg-box");
+    msgBox.style.display = "flex";
+
+    setTimeout(() => {
+        msgBox.style.display = "none";
+    }, 3000);
+})
