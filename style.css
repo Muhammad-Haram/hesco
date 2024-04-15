@@ -55,21 +55,22 @@
     padding: 40px 0;
 }
 
-.header-section .nav .logo {
+.header-section .nav .logo,
+.footer .footer-main-con .footer-content .logo {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 36px;
     font-weight: 900;
     color: #6B0095;
 }
 
-.header-section .nav ul {
+.header-section .nav .nav-menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.header-section .nav ul li {
+.header-section .nav .nav-menu .nav-menu-li {
     list-style-type: none;
     font-family: satochi;
     cursor: pointer;
@@ -196,7 +197,8 @@
 }
 
 .header-section .hero .hero-text .hero-btn,
-.aboutUs .aboutUs-container .aboutUs-content .aboutUs-btn {
+.aboutUs .aboutUs-container .aboutUs-content .aboutUs-btn,
+.form .form-btn {
     background: linear-gradient(330deg, #5600a9 0%, rgba(169, 0, 87, 1) 100%);
     border: 0;
     margin-top: 30px;
@@ -205,7 +207,8 @@
 }
 
 .header-section .hero .hero-text .hero-btn:hover,
-.aboutUs .aboutUs-container .aboutUs-content .aboutUs-btn:hover {
+.aboutUs .aboutUs-container .aboutUs-content .aboutUs-btn:hover,
+.form .form-btn:hover {
     background: linear-gradient(330deg, rgba(169, 0, 87, 1) 0%, #5600a9 100%);
 }
 
@@ -296,14 +299,16 @@
 }
 
 .services .ser-head-div,
-.reviews .reviews-head-div {
+.reviews .reviews-head-div,
+.form .form-head-div {
     width: 100%;
     position: relative;
     margin-bottom: 10px;
 }
 
 .services .ser-head-div .services-stroke-head,
-.reviews .reviews-head-div .reviews-stroke-head {
+.reviews .reviews-head-div .reviews-stroke-head,
+.form .form-head-div .form-stroke-head {
     font-size: 120px;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0.082);
     color: transparent;
@@ -313,7 +318,8 @@
 }
 
 .services .ser-head-div .services-head,
-.reviews .reviews-head-div .reviews-head {
+.reviews .reviews-head-div .reviews-head,
+.form .form-head-div .form-head {
     font-family: quantifyRegular;
     position: absolute;
     top: 70%;
@@ -325,7 +331,8 @@
 }
 
 .services .services-para,
-.reviews .reviews-para {
+.reviews .reviews-para,
+.form .form-para {
     font-family: satochi;
     text-align: center;
     margin-bottom: 40px;
@@ -475,4 +482,191 @@
 .swiper-scrollbar.swiper-scrollbar-horizontal {
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
+}
+
+/* form section */
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.form .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form .form-head-div .form-head {
+    font-family: quantifyRegular;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+}
+
+.form .form-head-div {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.form .form-section {
+    width: 100%;
+    padding: 0 300px;
+}
+
+.form .msg-box {
+    background: linear-gradient(330deg, #F6E0FF 0%, #FFE0F0 100%);
+    border-radius: 50px;
+    padding: 20px 35px;
+    align-items: center;
+    margin-bottom: 12px;
+    border: 2px solid #f7c9e1;
+    display: none;
+}
+
+.form .active{
+    display: flex;
+}
+
+.form .msg-box .msg {
+    color: #000;
+    font-size: 20px;
+    font-family: satochi;
+    margin-left: 20px;
+}
+
+.form .form-section .input-box {
+    width: 100%;
+    border: 2px solid #F0F0F0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 35px;
+    margin-bottom: 12px;
+}
+
+.form .form-section .textarea-box {
+    align-items: start;
+    padding: 30px 35px;
+    width: 100%;
+}
+
+.form .form-section .input-box .input {
+    width: 100%;
+    padding: 25px 10px;
+    font-size: 16px;
+    color: black;
+    font-family: satochi;
+    border: 0;
+    outline: 0;
+}
+
+.form .form-section .input-box .textarea {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: black;
+    font-family: satochi;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.form .form-section .input-box .input::placeholder,
+.form .form-section .input-box .textarea::placeholder {
+    color: #000;
+}
+
+.form .form-btn {
+    margin-top: 12px;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(330deg, rgba(107, 0, 149, 1) 0%, rgba(169, 0, 87, 1) 100%);
+    padding: 90px;
+}
+
+.footer .footer-main-con {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.footer .footer-content .footer-content {}
+
+.footer .footer-main-con .footer-content .logo {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-content .footer-para {
+    font-size: 16px;
+    color: white;
+    font-family: satochi;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.footer-content .socila-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content .footer-head2 {
+    font-family: satochi;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.footer-content .footer-links .link {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.footer-content .footer-links .link .footer-anchor {
+    text-decoration: none;
+    color: #fff;
+    font-family: satochi;
+    font-weight: 100;
+}
+
+.footer .footer-hr {
+    border: 1px solid #ffffff48;
+    margin: 50px 0;
+}
+
+.footer .footer-refrence {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-refrence .ref-para {
+    color: #fff;
+    font-style: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footer .footer-refrence .ref-span,
+.footer .footer-refrence .ref-anchor {
+    color: #fff;
+    font-family: satochi;
+    font-style: 16px;
+    text-decoration: none;
 }
