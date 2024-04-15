@@ -27,8 +27,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-
-// form submit msg 
+// form submit msg
 
 let form = document.querySelector('.form-section');
 
@@ -40,4 +39,4 @@ form.addEventListener("submit", (e) => {
     setTimeout(() => {
         msgBox.style.display = "none";
     }, 3000);
-})
+});

@@ -523,6 +523,10 @@
 .form .form-section {
     width: 100%;
     padding: 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .form .msg-box {
@@ -532,6 +536,7 @@
     align-items: center;
     margin-bottom: 12px;
     border: 2px solid #f7c9e1;
+    width: 100%;
     display: none;
 }
 
@@ -544,7 +549,7 @@
 
 .form .form-section .input-box {
     width: 100%;
-    border: 2px solid #F0F0F0;
+    border: 2px solid #dddddd;
     border-radius: 50px;
     display: flex;
     align-items: center;
