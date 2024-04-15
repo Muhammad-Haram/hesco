@@ -314,20 +314,22 @@
 
 .services .ser-head-div .services-head,
 .reviews .reviews-head-div .reviews-head {
-    font-size: 60px;
     font-family: quantifyRegular;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
 }
 
 .services .services-para,
 .reviews .reviews-para {
     font-family: satochi;
     text-align: center;
-    margin-bottom: 30px;
-    max-width: 370px;
+    margin-bottom: 40px;
+    max-width: 400px;
 }
 
 .services .services-boxes {
@@ -403,4 +405,74 @@
     flex-direction: column;
     width: 100%;
     background-color: #f6e0ff49;
+    padding: 60px 0;
+}
+
+.reviews .rev-slider {
+    width: 100%;
+    padding: 0px 160px 50px 160px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiper,
+.mySwiper {
+    width: 100% !important;
+    padding-bottom: 50px !important;
+}
+
+.swiper-slide {
+    background-color: #fff !important;
+    height: 330px !important;
+    padding: 40px;
+    margin: 0;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.swiper-slide .slider-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.swiper-slide .slider-top .sl-top-img {
+    margin-right: 20px;
+}
+
+.swiper-slide .slider-top .sl-top-content {}
+
+.swiper-slide .slider-top .sl-top-content .sl-top-pr-name {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.swiper-slide .slider-top .sl-top-content .sl-top-rev {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.swiper-slide .slider-top .sl-top-content .sl-top-rev .sl-top-para {
+    margin-left: 10px;
+}
+
+.swiper-scrollbar {
+    width: 10% !important;
+    opacity: 1 !important;
+    background: #DFDFDF !important;
+    margin-top: 30px !important;
+}
+
+.swiper-scrollbar-drag {
+    background: #A3015D !important;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
 }
