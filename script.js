@@ -1,5 +1,4 @@
 // swiper js
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -24,11 +23,10 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-    },
+    }
 });
 
 // form submit msg
-
 let form = document.querySelector('.form-section');
 
 form.addEventListener("submit", (e) => {
