@@ -1313,12 +1313,12 @@
     .form .form-section .input-box .input {
         padding: 10px;
     }
-    
-    .form .msg-box{
+
+    .form .msg-box {
         padding: 15px;
     }
 
-    .form .msg-box .msg{
+    .form .msg-box .msg {
         font-size: 16px;
     }
 
@@ -1362,6 +1362,10 @@
     .footer .footer-refrence {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .footer .refrences {
+        text-align: center;
     }
 
 }
