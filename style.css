@@ -1334,6 +1334,10 @@
         gap: 35px;
     }
 
+    .footer .footer-main-con .footer-content .logo {
+        margin-bottom: 20px;
+    }
+
     .footer .footer-content {
         width: 40%;
     }
@@ -1344,15 +1348,17 @@
 
     .footer-content .footer-para {
         max-width: 500px;
+        font-size: 16px;
+    }
+
+
+
+    .footer-content .footer-head2 {
         font-size: 25px;
     }
 
-    .footer-content .footer-head2 {
-        font-size: 30px;
-    }
-
     .footer-content .footer-links .link .footer-anchor {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .footer .footer-hr {
