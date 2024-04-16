@@ -690,8 +690,9 @@
 }
 
 @media screen and (min-width: 480px) and (max-width:768px) {
+
     body {
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     .header-section {
@@ -853,7 +854,9 @@
     /* state section */
 
     .states {
-        gap: 40px;
+        align-items: start;
+        justify-content: space-between;
+        gap: 30px;
     }
 
     .states .states-container {
@@ -865,6 +868,42 @@
 
     .states .states-head {
         margin-right: 20px;
+    }
+
+    /* .reviews and slider section */
+
+    .reviews{
+        padding: 10px 0;
+    }
+
+    .reviews .rev-content {
+        padding: 20px;
+    }
+
+    .reviews .rev-slider {
+        padding: 0px 20px 20px 20px !important;
+    }
+
+    .swiper-scrollbar {
+        display: none;
+    }
+
+    /* form section  */
+
+    .form .form-content{
+        padding: 20px;
+    }
+
+    .form .form-head-div .form-stroke-head{
+        font-size: 80px;
+    }
+
+    .form .form-head-div .form-head {
+        font-size: 30px;
+    }
+
+    .form .form-section {
+        padding: 0 30px;
     }
 
 }
