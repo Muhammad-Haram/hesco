@@ -1,3 +1,20 @@
+// navbar js 
+let menu = document.querySelector("#nav-menu");
+let close = document.querySelector("#close");
+let nav = document.querySelector(".nav-menu");
+
+if (menu) {
+    menu.addEventListener("click", () => {
+        nav.classList.add("active");
+    })
+}
+
+if (close) {
+    close.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+}
+
 // swiper js
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,

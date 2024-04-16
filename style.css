@@ -64,10 +64,16 @@
     color: #6B0095;
 }
 
+#close {
+    display: none;
+}
+
+.mbl {
+    display: none;
+}
+
 .header-section .nav .nav-menu {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -80,8 +86,6 @@
 .header-section .nav .transparent {
     background-color: transparent;
 }
-
-.header-section .small-star {}
 
 .header-section .hero .hero-text {
     position: relative;
@@ -699,12 +703,58 @@
         padding: 0 30px;
     }
 
+    .header-section .left .hero .hero-text .small-star {
+        margin-bottom: 20px;
+    }
+
     .header-section .right {
         display: none;
     }
 
     .header-section .nav {
         padding: 25px 0;
+    }
+
+    .nav .nav-menu {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        z-index: 12;
+        background-color: white;
+        transition: all 0.3s;
+        filter: drop-shadow(-5px 4px 9px #c2c2c2);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    #close {
+        display: block;
+        padding: 10px;
+        background: linear-gradient(330deg, rgba(107, 0, 149, 1) 0%, rgba(169, 0, 87, 1) 100%);
+        color: white;
+    }
+
+    #nav-menu {
+        padding: 10px;
+        background: linear-gradient(330deg, rgba(107, 0, 149, 1) 0%, rgba(169, 0, 87, 1) 100%);
+        color: white;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    .transparent {
         display: none;
     }
 
@@ -800,15 +850,17 @@
         font-size: 20px;
     }
 
+    /* state section */
+
     .states {
-        flex-direction: column;
         gap: 40px;
     }
 
     .states .states-container {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
+        flex-direction: column;
     }
 
     .states .states-head {
